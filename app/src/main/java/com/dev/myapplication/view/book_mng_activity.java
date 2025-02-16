@@ -1,5 +1,6 @@
 package com.dev.myapplication.view;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 
@@ -22,6 +23,7 @@ public class book_mng_activity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private book_mng_Adapter adapter;
     private List<book> bookList;
+    private Button addBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,5 +45,12 @@ public class book_mng_activity extends AppCompatActivity {
 
         adapter = new book_mng_Adapter(bookList);
         recyclerView.setAdapter(adapter);
+
+        addBtn = findViewById(R.id.addBtn);
+        addBtn.setOnClickListener(v->{
+            Intent intent = new Intent(this,add_activity.class);
+            startActivity(intent);
+        });
+
     }
 }
