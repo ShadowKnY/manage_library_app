@@ -33,15 +33,6 @@ public class book_mng_activity extends AppCompatActivity {
         recyclerView = findViewById(R.id.show_book);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         bookList = new ArrayList<>();
-        bookList.add(new book("NARUTO", "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos" + " de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un " + "impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal " + "texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en " + "los 60s con la creación de las hojas Letraset, las cuales contenian pasajes de Lorem Ipsum, y más recientemente " + "con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.", R.drawable.naruto));
-
-        bookList.add(new book("ONE PIECE","Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas \"Letraset\", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.",R.drawable.onepiece));
-
-        bookList.add(new book("Jujutsu Kaisen","Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas \"Letraset\", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.",R.drawable.jjk));
-
-        bookList.add(new book("Black Clover","Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas \"Letraset\", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.",R.drawable.blackclover));
-
-        bookList.add(new book("Tokyo Revenger","Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas \"Letraset\", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.",R.drawable.tokyoreven));
 
         adapter = new book_mng_Adapter(bookList);
         recyclerView.setAdapter(adapter);
@@ -51,6 +42,5 @@ public class book_mng_activity extends AppCompatActivity {
             Intent intent = new Intent(this,add_activity.class);
             startActivity(intent);
         });
-
     }
 }
